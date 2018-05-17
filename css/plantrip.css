@@ -1,0 +1,182 @@
+section .gallery_nav{
+    background: #6C6C6C;
+    width: 25%;
+    height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+section .palntrip_bar{
+    background: none;
+    margin: 5px 10px;
+    text-align: right;
+}
+section .palntrip_bar img{
+    cursor: pointer;
+}
+section .gallery_nav img{
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+section .palntrip_search{
+    background: white;
+    display: flex;
+}
+section .palntrip_search img{
+    width: 30px;
+    height: 30px;
+    margin: 5px 5px 5px 20px;
+}
+section .palntrip_search input{
+    width: 65%;
+    margin: 8px auto;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    text-align: center;
+}
+
+section .subjext_body{
+    height: 86.3%;
+    overflow-y: auto;
+}
+section .subjext_body::-webkit-scrollbar{
+    display:none;
+}
+section .palntrip_subject1{
+    background: #F2C94C;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+section .palntrip_subject2{
+    background: #6FCF97;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+section h3{
+    font-size: 2.3em;
+    padding: 25px 15px 10px 15px;
+    margin: 0;
+    font-family: 'Amaranth', sans-serif;
+}
+section hr{
+    width: 85%;
+    margin: 2px auto;
+    color: red;
+}
+section span{
+    font-size: 0.5em;
+    padding-left: 40%;
+    font-family: 'Amaranth', sans-serif;
+}
+section .list_bar1{
+    background: #F2994A;
+    display: flex;
+    padding: 5px;
+    margin-top: 20px;
+}
+section .list_bar2{
+    background: #27AE60;
+    display: flex;
+    padding: 5px;
+    margin-top: 20px;
+}
+section .list_bar1 img{
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+section .list_bar2 img{
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+section .map_body {
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+}
+section .calendar_back{
+    background: white;
+    margin: 0 auto;
+    padding: 5px;
+    height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+section .map_body table,th,tr,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+section .map_body table{
+    width: 100%;
+    height: 88.5%;
+    font-family: 'Amaranth', sans-serif;
+}
+section .map_body th{
+    background: #56CCF2;
+    color: white;
+    border-color: white;
+    letter-spacing: 2px;
+}
+section .map_body td{
+    height: 19%;
+    vertical-align: top;
+    padding: 10px;
+}
+section .map_body .holiday{
+    width: 15%;
+}
+section .map_body .weekday{
+    width: 14%;
+}
+section .calendar_title{
+    display: flex;
+    height: 12%;
+    padding: 0 5%;
+}
+section .calendar_title img{
+    width: 50px;
+    height: 50px;
+    margin: auto 0;
+}
+section .calendar_title .left_page{
+    cursor: pointer;
+}
+section .calendar_title .right_page{
+    cursor: pointer;
+}
+section .calendar_title h2{
+    font-size: 2.5em;
+    margin: auto 10%;
+    font-family: 'Amaranth', sans-serif;
+}
+section .title_seartch{
+    display: flex;
+    width: 40%;
+    height: 35px;
+    margin: auto 0;
+    background: white;
+    border: 1px solid black;
+}
+section .title_seartch img{
+    width: 25px;
+    height: 25px;
+    margin: auto 10px;
+}
+section .title_seartch input{
+    width: 100%;
+    height: 25px;
+    margin: auto 10px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.gallery_nav_open{
+    cursor: pointer;
+    z-index: 5;
+    width: 20px;
+    height: 70px;
+    display: none;
+    position: absolute;
+    background: white;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
