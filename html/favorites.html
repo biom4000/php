@@ -5,16 +5,17 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html lang="zh-Hant-TW">
-<link rel="stylesheet" href="cs/mold.css">
+
 <title>toLife welcome</title>
-<link rel="shortcut icon" type="image/x-icon" href="image/Bridge.ico">
-<link href="cs/favorites.css" rel="stylesheet" type="text/css"/>
+<link rel="shortcut icon" type="image/x-icon" href="../image/Bridge.ico">
+<link rel="stylesheet" href="../css/favorites.css">
+<link rel="stylesheet" href="../css/mold.css">
 <link href="https://fonts.googleapis.com/css?family=Amaranth|Orbitron" rel="stylesheet">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="http://code.google.com/apis/gears/gears_init.js"></script>
-<script src="js/mold.js"></script>
-<script src="js/favorites.js"></script>
+<script src="../js/mold.js"></script>
+<script src="../js/favorites.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOe4sObTW-KX0lOhYeYaKbFuvWBWPgkpg&libraries=places&callback=initMap"
         async defer></script>
 
@@ -22,132 +23,132 @@ and open the template in the editor.
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <body>
 <header>
-    <img class="menu" src="image/ic_menu_white_48px.svg" alt="miss"/>
+    <img class="menu" src="../image/ic_menu_white_48px.svg" alt="miss"/>
     <div class="pagename">Favorites</div>
-    <img class="logo" src="image/zzz.png" alt="miss" />
+    <img class="logo" src="../image/zzz.png" alt="miss" />
     <div class="logoname">toLife</div>
-    <img class="setting" src="image/ic_settings_white_48px.svg" alt="miss" />
-    <img class="login" src="image/ic_account_circle_white_48px.svg" alt="miss" />
+    <img class="setting" src="../image/ic_settings_white_48px.svg" alt="miss" />
+    <img class="login" src="../image/ic_account_circle_white_48px.svg" alt="miss" />
 </header>
 <section>
     <nav>
         <div class="home" onclick="window.open('./home.html','_self')">
-            <img src="image/ic_home_black_48px.svg" alt="miss" />
+            <img src="../image/ic_home_black_48px.svg" alt="miss" />
             <div>Home</div>
         </div>
         <div class="plantrip" onclick="window.open('./plantrip.html','_self')">
-            <img src="image/ic_map_black_48px.svg" alt="miss" />
+            <img src="../image/ic_map_black_48px.svg" alt="miss" />
             <div>PlanTrip</div>
         </div>
         <div class="star">
-            <img src="image/ic_star_black_48px.svg" alt="miss" />
+            <img src="../image/ic_star_black_48px.svg" alt="miss" />
             <div>Favorites</div>
         </div>
         <div class="thumb" onclick="window.open('./blog.html','_self')">
-            <img src="image/ic_thumb_up_black_48px.svg" alt="miss" />
+            <img src="../image/ic_thumb_up_black_48px.svg" alt="miss" />
             <div>Proposal</div>
         </div>
         <div class="email" onclick="window.open('./mail.html','_self')">
-            <img src="image/ic_email_black_48px.svg" alt="miss" />
+            <img src="../image/ic_email_black_48px.svg" alt="miss" />
             <div>Suggent</div>
         </div>
         <div class="phone" onclick="window.open('./phone.html','_self')">
-            <img src="image/ic_phone_android_black_48px.svg" alt="miss" />
+            <img src="../image/ic_phone_android_black_48px.svg" alt="miss" />
             <div>Moblie</div>
         </div>
     </nav>
 
     <div class="gallery">
-        <img class="gallery_nav_open" src="image/ic_lock_open_black_48px.svg" alt="miss" />
+        <img class="gallery_nav_open" src="../image/ic_lock_open_black_48px.svg" alt="miss" />
         <div class="gallery_nav">
             <div class="favor_bar">
-                <img src="image/ic_library_add_white_48px.svg" alt="miss" />
-                <img class="gallery_nav_lock" src="image/ic_lock_outline_white_48px.svg" alt="miss" />
+                <img src="../image/ic_library_add_white_48px.svg" alt="miss" />
+                <img class="gallery_nav_lock" src="../image/ic_lock_outline_white_48px.svg" alt="miss" />
             </div>
             <div class="favor_search">
-                <img src="image/ic_search_black_48px.svg" alt="miss" />
+                <img src="../image/ic_search_black_48px.svg" alt="miss" />
                 <input type="search" />
             </div>
             <div class="subjext_body">
                 <ul id="favor_subject1">
                     <li class="title">
                         <input class="sub1_focus" id="sub1_title" type="text" value="One Day"/>
-                        <img id="sub1_title_img" src="image/ic_more_vert_black_48px.svg" alt="miss" />
+                        <img id="sub1_title_img" src="../image/ic_more_vert_black_48px.svg" alt="miss" />
                     </li>
                     <li class="list list1">
-                        <img class="list1_img" src="image/ic_beach_access_black_48px.svg" alt="miss" />
+                        <img class="list1_img" src="../image/ic_beach_access_black_48px.svg" alt="miss" />
                         <div class="sub1_focus" tabindex="0"></div>
                     </li>
                 </ul>
                 <ul id="favor_subject2">
                     <li class="title">
                         <input class="sub2_focus" id="sub2_title" type="text" value="Two Day"/>
-                        <img id="sub2_title_img" src="image/ic_more_vert_black_48px.svg" alt="miss" />
+                        <img id="sub2_title_img" src="../image/ic_more_vert_black_48px.svg" alt="miss" />
                     </li>
                     <li class="list list2" id="list2-1">
-                        <img class="list2_img" src="image/ic_beach_access_black_48px.svg" alt="miss" />
+                        <img class="list2_img" src="../image/ic_beach_access_black_48px.svg" alt="miss" />
                         <div class="sub2_focus" tabindex="0"></div>
                     </li>
                     <li class="list list2" id="list2-2">
-                        <img class="list2_img" src="image/ic_golf_course_black_48px.svg" alt="miss" />
+                        <img class="list2_img" src="../image/ic_golf_course_black_48px.svg" alt="miss" />
                         <div class="sub2_focus" tabindex="0"></div>
                     </li>
                     <li class="list list2" id="list2-3">
-                        <img class="list2_img" src="image/ic_free_breakfast_black_48px.svg" alt="miss" />
+                        <img class="list2_img" src="../image/ic_free_breakfast_black_48px.svg" alt="miss" />
                         <div class="sub2_focus" tabindex="0"></div>
                     </li>
                 </ul>
                 <ul id="favor_subject3">
                     <li class="title">
                         <input class="sub3_focus" id="sub3_title" type="text" value="Three Day"/>
-                        <img id="sub3_title_img" src="image/ic_more_vert_black_48px.svg" alt="miss" />
+                        <img id="sub3_title_img" src="../image/ic_more_vert_black_48px.svg" alt="miss" />
                     </li>
                     <li class="list list3" id="list3-1">
-                        <img class="list3_img" src="image/ic_beach_access_black_48px.svg" alt="miss" />
+                        <img class="list3_img" src="../image/ic_beach_access_black_48px.svg" alt="miss" />
                         <div class="sub3_focus" tabindex="0"></div>
                     </li>
                     <li class="list list3" id="list3-2">
-                        <img class="list3_img" src="image/ic_golf_course_black_48px.svg" alt="miss" />
+                        <img class="list3_img" src="../image/ic_golf_course_black_48px.svg" alt="miss" />
                         <div class="sub3_focus" tabindex="0"></div>
                     </li>
                     <li class="list list3" id="list3-3">
-                        <img class="list3_img" src="image/ic_free_breakfast_black_48px.svg" alt="miss" />
+                        <img class="list3_img" src="../image/ic_free_breakfast_black_48px.svg" alt="miss" />
                         <div class="sub3_focus" tabindex="0"></div>
                     </li>
                 </ul>
                 <ul id="favor_subject4">
                     <li class="title">
                         <input type="text" placeholder="Title"/>
-                        <img src="image/ic_more_vert_black_48px.svg" alt="miss" />
+                        <img src="../image/ic_more_vert_black_48px.svg" alt="miss" />
                     </li>
                     <li class="list list4" id="list4-1">
-                        <img src="image/ic_beach_access_black_48px.svg" alt="miss" />
+                        <img src="../image/ic_beach_access_black_48px.svg" alt="miss" />
                         <div type="text"></div>
                     </li>
                     <li class="list list4" id="list4-2">
-                        <img src="image/ic_golf_course_black_48px.svg" alt="miss" />
+                        <img src="../image/ic_golf_course_black_48px.svg" alt="miss" />
                         <div type="text"></div>
                     </li>
                     <li class="list list4" id="list4-3">
-                        <img src="image/ic_free_breakfast_black_48px.svg" alt="miss" />
+                        <img src="../image/ic_free_breakfast_black_48px.svg" alt="miss" />
                         <div type="text"></div>
                     </li>
                 </ul>
                 <ul id="favor_subject5">
                     <li class="title">
                         <input type="text" placeholder="Title"/>
-                        <img src="image/ic_more_vert_black_48px.svg" alt="miss" />
+                        <img src="../image/ic_more_vert_black_48px.svg" alt="miss" />
                     </li>
                     <li class="list list5" id="list5-1">
-                        <img src="image/ic_beach_access_black_48px.svg" alt="miss" />
+                        <img src="../image/ic_beach_access_black_48px.svg" alt="miss" />
                         <div type="text"></div>
                     </li>
                     <li class="list list5" id="list5-2">
-                        <img src="image/ic_golf_course_black_48px.svg" alt="miss" />
+                        <img src="../image/ic_golf_course_black_48px.svg" alt="miss" />
                         <div type="text"></div>
                     </li>
                     <li class="list list5" id="list5-3">
-                        <img src="image/ic_free_breakfast_black_48px.svg" alt="miss" />
+                        <img src="../image/ic_free_breakfast_black_48px.svg" alt="miss" />
                         <div type="text"></div>
                     </li>
                 </ul>
@@ -156,7 +157,7 @@ and open the template in the editor.
 
         <div class="map_body">
             <div id="map_search">
-                <img id="search_image" src="image/ic_search_black_48px.svg" alt="miss" />
+                <img id="search_image" src="../image/ic_search_black_48px.svg" alt="miss" />
                 <input id="autocomplete" type="search" placeholder="seatch..."/>
             </div>
             <div id="map"></div>
@@ -166,7 +167,7 @@ and open the template in the editor.
 <div class="login_page">
     <div class="back">
         <div>
-            <img class="login_close" src="image/ic_close_black_48px.svg" alt="miss" />
+            <img class="login_close" src="../image/ic_close_black_48px.svg" alt="miss" />
         </div>
         <h1>Login</h1>
         <hr/>
@@ -202,8 +203,8 @@ and open the template in the editor.
             </tr>
         </table>
         <div class="iw_attribute_control">
-            <img id="iw-add" src="image/ic_add_black_48px.svg" alt="miss" />
-            <img src="image/ic_remove_black_48px.svg" alt="miss" />
+            <img id="iw-add" src="../image/ic_add_black_48px.svg" alt="miss" />
+            <img src="../image/ic_remove_black_48px.svg" alt="miss" />
         </div>
     </div>
 </div>
