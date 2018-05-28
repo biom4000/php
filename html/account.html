@@ -51,36 +51,39 @@ and open the template in the editor.
             <div>Mobile</div>
         </div>
     </nav>
-    <div class="back">
+
+    <form method="post" action="../php/account.php" class="back">
         <h1>Account</h1>
         <hr/>
         <p>ID</p>
-        <input type="text" />
+        <input type="text" name="id" />
         <p>Password</p>
-        <input type="password" style="margin-bottom: 1%;"/>
-        <input type="password" />
+        <input type="password" style="margin-bottom: 0.5%;" name="password1" />
+        <input type="password" name="password2" />
         <p>Email</p>
-        <input type="email" />
+        <input type="email" name="email" />
         <p>Gender</p>
-        <select>
-                <option>Male</option>
-                <option>Famale</option>
+        <select name="gender">
+            <option value="Male">Male</option>
+            <option value="Famale">Famale</option>
         </select>
         <p>Area</p>
-        <select>
-            <option>Africa</option>
-            <option>Asia</option>
-            <option>Europe</option>
-            <option>North America</option>
-            <option>South America</option>
-            <option>Oceania</option>
-            <option>Antarctica</option>
-            <option>Other</option>
+        <select name="area" style="margin-bottom: 5%;">
+            <option value="Africa">Africa</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europe</option>
+            <option value="North America">North America</option>
+            <option value="South America">South America</option>
+            <option value="Oceania">Oceania</option>
+            <option value="Antarctica">Antarctica</option>
+            <option value="Other">Other</option>
         </select>
-        <button>Apply</button>
+        <input type="submit" class="button" value="Apple"/>
+        <input type="reset" class="button" value="Reset"/>
         <a href="./account.html")>register now</a><br>
         <a href="./forget.html")>forget password?</a>
-    </div>
+    </form>
+
 </section>
 <div class="login_page">
     <div class="back">
