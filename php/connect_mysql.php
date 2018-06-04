@@ -9,7 +9,7 @@
 $db_server  = "localhost";
 $db_user = "bion4000";
 $db_passwd  = "ga9871109kppq";
-$db_name  = "toLife";
+$db_name  = "tolife";
 
 $con=mysqli_connect($db_server,$db_user,$db_passwd ,$db_name );
 
@@ -18,3 +18,4 @@ if (mysqli_connect_errno())
 {
     echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
+echo "ok";
