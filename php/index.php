@@ -1,43 +1,73 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: andy_wang
- * Date: 2018/6/4
- * Time: 下午 04:08
- */
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="zh-Hant-TW">
 
-if($_SERVER['REQUEST_METHOD'] == 'POST'){
-    $id = $_POST['id'];
-    $password = $_POST['password'];
-    $row;
+<title>toLife</title>
+<link rel="shortcut icon" type="image/x-icon" href="../image/Bridge.ico">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 
-    $db_server  = "localhost";
-    $db_user = "bion4000";
-    $db_passwd  = "ga9871109kppq";
-    $db_name  = "tolife";
+<link rel="stylesheet" href="../css/php-index.css">
+<script src="../js/index.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Amaranth|Orbitron" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<body>
+<div class="cover_background">
+    <div id="demo" class="carousel slide" data-ride="carousel" style="width: 70%;overflow: hidden">
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
 
-    $con=mysqli_connect($db_server,$db_user,$db_passwd ,$db_name );
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../blog_date/poto/2-1.JPG" alt="miss1">
+            </div>
+            <div class="carousel-item">
+                <img src="../blog_date/poto/1-1-1.jpg" alt="miss2">
+            </div>
+            <div class="carousel-item">
+                <img src="../blog_date/poto/1-1-3.jpg" alt="miss3">
+            </div>
+        </div>
 
-// Check connection
-    if (mysqli_connect_errno())
-    {
-        echo "Failed to connect to MySQL: " . mysqli_connect_error();
-    }
-    $result = mysqli_query($con, "SELECT id FROM member");
-    if (mysqli_num_rows($result) > 0) {
-        // output data of each row
-        while($row = mysqli_fetch_assoc($result)) {
-            if($row["id"] == $id){
-                if($row["password"] == $password)
-                echo ok;
-                break;
-            }
-        }
-    } else {
-        echo "0 results";
-    }
-
-    mysqli_close($con);
-
-
-}
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <form method="post" action="index.php" class="cover_login">
+        <h2>Hi Traveler</h2>
+        <div class="form-group" style="text-align: center;">
+            <label for="id">ID</label>
+            <input type="text" class="form-control" name="id">
+        </div>
+        <div class="form-group" style="text-align: center;">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" name="password">
+        </div>
+        <div class="form-group form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox"> Remember me
+            </label>
+        </div><br>
+        <button type="submit" class="btn btn-primary btn-block" >Login</button>
+        <button type="button" class="btn btn-secondary btn-block" >Go</button><br>
+        <label for="register"><a href="./account.html">register now</a></label>
+        <label for="forget"><a href="./forget.html">forget password?</a></label>
+    </form>
+</div>
+</body>
+</html>

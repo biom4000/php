@@ -1,3 +1,12 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 2017/11/16, 下午 01:45:39
+    Author     : Andy_Wang
+*/
 *{
     box-sizing: border-box;
 }
@@ -5,20 +14,48 @@ body{
     margin: 0px;
     background: #828282;
 }
+label{
+    margin: 0px;
+    text-align: center;
+    font-family: 'Amaranth', sans-serif;
+}
 h2{
     font-family: 'Orbitron', sans-serif;
     word-spacing: 10px;
     font-size: 40px;
     text-align: center;
     color: #00A600;
+    margin: 12% 0;
 }
-.form-group{
+button{
     font-family: 'Amaranth', sans-serif;
-
+    color: white;
+    z-index: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.login_form{
-    padding: 50px;
+a{
+    color: #000000;
+    font-size: 0.8em;
+}
+.cover_login{
+    width: 30%;
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+}
+.cover_background{
+    display: flex;
+    background: #cf99ff;
+    position: absolute;
+    top:0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    height: 80%;
+    width: 85%;
 }
 img{
     width: 100%;
+    filter: saturate(7);
 }
