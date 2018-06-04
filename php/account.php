@@ -15,4 +15,3 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
     echo "id=".$id."<br>password1=".$password[0]."<br>password2=".$password[1]."<br>email=".$email."<br>gender=".$gender."<br>area=".$area;
 }
-echo "asd";
