@@ -14,7 +14,7 @@ body{
     margin: 0px;
     background: #828282;
 }
-p{
+label{
     margin: 0px;
     text-align: center;
     font-family: 'Amaranth', sans-serif;
@@ -22,55 +22,30 @@ p{
 h2{
     font-family: 'Orbitron', sans-serif;
     word-spacing: 10px;
-    font-size: 40px;
+    font-size: 2em;
     text-align: center;
     color: #00A600;
-}
-a{
-    text-align: right;
+    margin: 8% 0;
 }
 button{
-    height: 40px;
     font-family: 'Amaranth', sans-serif;
-    letter-spacing: 5px;
-    background: #FF5151;
-    border: none;
     color: white;
-    border-radius: 4px;
-    cursor: pointer;
-    margin: 10px 0px;
     z-index: 1;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-button:hover{
-    background: #c84949;
-}
-input{
-    padding: 5px 10px;
-    border: none;
-    border-bottom: 1px solid #d0d0d0;
-    outline: none;
-    transition: 0.5s ease-out;
-    margin: 0px 0px 20px 0px;
-    font-size: 1.5em;
-}
-input:focus{
-    border-bottom: 1px solid red;
-}
 a{
-    text-decoration: none;
-    color: #285db2;
-    font-size: 0.5em;
+    color: #000000;
+    font-size: 0.8em;
 }
 .cover_login{
     width: 30%;
-    padding: 0px 30px;
+    padding: 3% 5%;
     display: flex;
     flex-direction: column;
 }
 .cover_background{
     display: flex;
-    background: white;
+    background: #cf99ff;
     position: absolute;
     top:0px;
     bottom: 0px;
@@ -81,9 +56,11 @@ a{
     width: 85%;
 }
 img{
-    width: 70%;
-    filter: saturate(7);
+    width: 100%;
 }
-#demo{
-    height: 100%;
+#error_showbox{
+    color: red;
+}
+.form-group{
+    text-align: center;
 }
