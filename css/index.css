@@ -16,7 +16,6 @@ body{
 }
 label{
     margin: 0px;
-    text-align: center;
     font-family: 'Amaranth', sans-serif;
 }
 h2{
@@ -27,21 +26,19 @@ h2{
     color: #00A600;
     margin: 8% 0;
 }
+a{
+    color: #5b5b5b;
+    font-size: 1em;
+}
 button{
     font-family: 'Amaranth', sans-serif;
     color: white;
     z-index: 1;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-a{
-    color: #000000;
-    font-size: 0.8em;
-}
 .cover_login{
     width: 30%;
     padding: 3% 5%;
-    display: flex;
-    flex-direction: column;
 }
 .cover_background{
     display: flex;
@@ -52,14 +49,15 @@ a{
     left: 0px;
     right: 0px;
     margin: auto;
-    height: 80%;
-    width: 85%;
+    height: 562px;
+    width: 1250px;
 }
 img{
     width: 100%;
 }
 #error_showbox{
     color: red;
+    text-align: center;
 }
 .form-group{
     text-align: center;

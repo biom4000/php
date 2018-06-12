@@ -50,19 +50,19 @@ and open the template in the editor.
         </a>
     </div>
     <div class="cover_login">
-        <h2>Hi Traveler</h2>
+        <h2>Hi Traveler</h2><br>
         <div class="form-group">
             <label for="id_label">ID</label>
-            <input type="text" class="form-control" name="id" id="id_input">
+            <input type="text" class="form-control" id="id_input">
         </div>
         <div class="form-group">
             <label for="password_label">Password</label>
-            <input type="password" class="form-control" name="password" id="password_input">
+            <input type="password" class="form-control" id="password_input">
         </div>
-        <p id="error_showbox"> </p>
+        <div id="error_showbox" role="alert"></div>
         <button type="button" onclick="showHint(id_input.value, password_input.value)" class="btn btn-primary btn-block" >Login</button>
         <button type="button" class="btn btn-secondary btn-block" >Go</button><br>
-        <label for="register"><a href="./account.html">register now</a></label>
+        <label for="register"><a href="./account.html">register now</a></label><br>
         <label for="forget"><a href="./forget.html">forget password?</a></label>
     </div>
 </div>

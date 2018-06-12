@@ -1,7 +1,9 @@
 function showHint(str1, str2) {
 
-
+    document.getElementById("error_showbox").classList.add("alert");
     if( (str1.length == 0) || (str2.length == 0) ){
+        document.getElementById("error_showbox").classList.remove("alert-secondary");
+        document.getElementById("error_showbox").classList.add("alert-warning");
         document.getElementById("error_showbox").innerHTML = "**ID or Password is null**";
     }
     else {
@@ -12,6 +14,8 @@ function showHint(str1, str2) {
                     document.location.href="../html/home.html";
                 }
                 else{
+                    document.getElementById("error_showbox").classList.remove("alert-secondary");
+                    document.getElementById("error_showbox").classList.add("alert-warning");
                     document.getElementById("error_showbox").innerHTML = this.responseText;
                 }
             }
