@@ -4,13 +4,12 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html lang="zh-Hant-TW">
-
+<html lang="zh-TW">
 
 <title>toLife</title>
 <link rel="shortcut icon" type="image/x-icon" href="../image/Bridge.ico">
 <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../js/jquery-3.3.1.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/index.js"></script>
 <link rel="stylesheet" href="../css/index.css">
@@ -49,7 +48,7 @@ and open the template in the editor.
             <span class="carousel-control-next-icon"></span>
         </a>
     </div>
-    <div class="cover_login">
+    <form class="cover_login">
         <h2>Hi Traveler</h2><br>
         <div class="form-group">
             <label>ID</label>
@@ -60,11 +59,11 @@ and open the template in the editor.
             <input type="password" class="form-control" id="password_input">
         </div>
         <div id="error_show" role="alert"></div>
-        <button type="button" onclick="showHint(id_input.value, password_input.value)" class="btn btn-primary btn-block" >Login</button>
-        <button type="button" onclick="gohome()" class="btn btn-secondary btn-block" >Go</button><br>
+        <button type="button" onclick="showHint()" class="btn btn-primary btn-block" >Login</button>
+        <button type="button" onclick="document.location.href='../html/home.html'" class="btn btn-secondary btn-block" >Go</button><br>
         <label><a href="../html/account.html">register now</a></label><br>
         <label><a href="../html/forget.html">forget password?</a></label>
-    </div>
+    </form>
 </div>
 </body>
 </html>

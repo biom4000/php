@@ -1,7 +1,7 @@
-function showHint(str1, str2) {
+function showHint() {
 
     document.getElementById("error_show").classList.add("alert");
-    if( (str1.value == 0) || (str2.length == 0) ){
+    if( (document.getElementById('id_input').value.length == 0) || (document.getElementById('password_input').value.length == 0) ){
         document.getElementById("error_show").classList.remove("alert-secondary");
         document.getElementById("error_show").classList.add("alert-warning");
         document.getElementById("error_show").innerHTML = "**ID or Password is null**";
@@ -14,18 +14,15 @@ function showHint(str1, str2) {
                     document.location.href="../html/home.html";
                 }
                 else{
-                    document.getElementById("error_showbox").classList.remove("alert-secondary");
-                    document.getElementById("error_showbox").classList.add("alert-warning");
-                    document.getElementById("error_showbox").innerHTML = this.responseText;
+                    document.getElementById("error_show").classList.remove("alert-secondary");
+                    document.getElementById("error_show").classList.add("alert-warning");
+                    document.getElementById("error_show").innerHTML = this.responseText;
                 }
             }
         }
         xmlhttp.open("POST", "../php/index.php", true);
         xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-        xmlhttp.send("id="+str1+"&pwd="+str2);
+        xmlhttp.send("id="+document.getElementById('id_input')+"&pwd="+document.getElementById('password_input'));
 
     }
-}
-function gohome() {
-    document.location.href="../html/home.html";
 }
