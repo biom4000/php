@@ -6,55 +6,67 @@ and open the template in the editor.
 -->
 <html lang="zh-Hant-TW">
 
+
 <title>toLife welcome</title>
 <link rel="shortcut icon" type="image/x-icon" href="../image/Bridge.ico">
-<link rel="stylesheet" href="../css/home.css">
-<link rel="stylesheet" href="../css/mold.css">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/forget.js"></script>
+<link rel="stylesheet" href="../css/forget.css">
 <link href="https://fonts.googleapis.com/css?family=Amaranth|Orbitron" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-<!--[if lt IE 9]>
-<script src="html5shiv.js"></script>
-<![endif]-->
-<body>
-<header>
-    <img class="menu" src="../image/ic_menu_white_48px.svg" alt="miss"/>
-    <div class="pagename">Account</div>
-    <img class="logo" src="../image/zzz.png" alt="miss" />
-    <div class="logoname">toLife</div>
-    <img class="setting" src="../image/ic_settings_white_48px.svg" alt="miss" />
-    <img class="login" src="../image/ic_account_circle_white_48px.svg" alt="miss" />
-</header>
-<nav>
-    <div class="home">
-        <img src="../image/ic_home_black_48px.svg" alt="miss" />
-        <div>Home</div>
-    </div>
-    <div class="plantrip" onclick="window.open('./plantrip.html','_self')">
-        <img src="../image/ic_map_black_48px.svg" alt="miss" />
-        <div>PlanTrip</div>
-    </div>
-    <div class="star" onclick="window.open('./favorites.html','_self')">
-        <img src="../image/ic_star_black_48px.svg" alt="miss" />
-        <div>Favorites</div>
-    </div>
-    <div class="thumb" onclick="window.open('./blog.html','_self')">
-        <img src="../image/ic_thumb_up_black_48px.svg" alt="miss" />
-        <div>Proposal</div>
-    </div>
-    <div class="email" onclick="window.open('./mail.html','_self')">
-        <img src="../image/ic_email_black_48px.svg" alt="miss" />
-        <div>Suggent</div>
-    </div>
-    <div class="phone" onclick="window.open('./phone.html','_self')">
-        <img src="../image/ic_phone_android_black_48px.svg" alt="miss" />
-        <div>Mobile</div>
-    </div>
-</nav>
-<section>
 
-</section>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<body>
+<div id="back">
+    <div id="forget_form">
+        <div>
+            <h2>Forget</h2>
+            <HR color="#842b00" size="3" align="center">
+        </div>
+
+        <div class="form-group form-inline">
+            <label>ID : </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="id" class="form-control">
+        </div>
+        <div class="form-group form-inline">
+            <label>Password : </label>&nbsp;&nbsp;
+            <input type="password" name="password1" class="form-control" id="pwd1_input"/><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="password" name="password2" class="form-control" id="pwd2_input"/>
+        </div>
+        <div class="form-group form-inline">
+            <label>Email : </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="email" name="email" class="form-control" />
+        </div>
+        <div class="form-group form-inline">
+            <label>Gender : </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select name="gender" class="form-control custom-select">
+                <option value="Male">Male</option>
+                <option value="Famale">Famale</option>
+            </select>
+        </div>
+        <div class="form-group form-inline">
+            <label>Area : </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select name="area" class="form-control custom-select">
+                <option value="Africa">Africa</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="North America">North America</option>
+                <option value="South America">South America</option>
+                <option value="Oceania">Oceania</option>
+                <option value="Antarctica">Antarctica</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <br>
+        <button class="btn btn-success btn-block" onclick="">Apple</button>
+        <button class="btn btn-danger btn-block" onclick="history.back()">Back</button><br>
+    </div>
+</div>
 
 </body>
 </html>

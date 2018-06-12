@@ -11,11 +11,11 @@ and open the template in the editor.
     box-sizing: border-box;
 }
 body{
-    margin: 0px;
+    margin: 0;
     background: #828282;
 }
 label{
-    margin: 0px;
+    margin: 0;
     font-family: 'Amaranth', sans-serif;
 }
 h2{
@@ -44,10 +44,10 @@ button{
     display: flex;
     background: #cf99ff;
     position: absolute;
-    top:0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     margin: auto;
     height: 562px;
     width: 1250px;
@@ -55,7 +55,7 @@ button{
 img{
     width: 100%;
 }
-#error_showbox{
+#error_show{
     color: red;
     text-align: center;
 }

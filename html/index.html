@@ -52,18 +52,18 @@ and open the template in the editor.
     <div class="cover_login">
         <h2>Hi Traveler</h2><br>
         <div class="form-group">
-            <label for="id_label">ID</label>
+            <label>ID</label>
             <input type="text" class="form-control" id="id_input">
         </div>
         <div class="form-group">
-            <label for="password_label">Password</label>
+            <label>Password</label>
             <input type="password" class="form-control" id="password_input">
         </div>
-        <div id="error_showbox" role="alert"></div>
+        <div id="error_show" role="alert"></div>
         <button type="button" onclick="showHint(id_input.value, password_input.value)" class="btn btn-primary btn-block" >Login</button>
-        <button type="button" class="btn btn-secondary btn-block" >Go</button><br>
-        <label for="register"><a href="./account.html">register now</a></label><br>
-        <label for="forget"><a href="./forget.html">forget password?</a></label>
+        <button type="button" onclick="gohome()" class="btn btn-secondary btn-block" >Go</button><br>
+        <label><a href="../html/account.html">register now</a></label><br>
+        <label><a href="../html/forget.html">forget password?</a></label>
     </div>
 </div>
 </body>
