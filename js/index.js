@@ -22,7 +22,7 @@ function showHint() {
         }
         xmlhttp.open("POST", "../php/index.php", true);
         xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-        xmlhttp.send("id="+document.getElementById('id_input')+"&pwd="+document.getElementById('password_input'));
+        xmlhttp.send("id="+document.getElementById('id_input').value+"&pwd="+document.getElementById('password_input').value);
 
     }
 }
