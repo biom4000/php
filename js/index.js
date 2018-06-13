@@ -11,7 +11,7 @@ function showHint() {
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 if(this.responseText == 'ok'){
-                    document.location.href="../html/home.html";
+                    history.back();//document.location.href="../html/home.html";
                 }
                 else{
                     document.getElementById("error_show").classList.remove("alert-secondary");

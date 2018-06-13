@@ -1,0 +1,17 @@
+section .gallery{
+    display: flex;
+    width: 86%;
+    margin: 0 auto;
+    background: white;
+    padding: 1%;
+}
+.carousel-item{
+    width: 100%;
+}
+img{
+    width: 100%;
+}
+.media{
+    color: white;
+    background: black;
+}

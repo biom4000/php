@@ -255,11 +255,7 @@ section{
     height: 92%;
     display: flex;
 }
-section .gallery{
-    display: flex;
-    width: 86%;
-    margin: 0 auto;
-}
+
 
 .login_page{
     background: rgba(0,0,0,0.8);

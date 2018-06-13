@@ -4,14 +4,14 @@ function showHint() {
         (document.getElementById('pwd2_input').value.length == 0)||
         (document.getElementById('email_input').value.length == 0) ){
 
-        document.getElementById("id_error").classList.remove("alert", "alert-secondary");
-        document.getElementById("id_error").classList.add("alert", "alert-warning");
-        document.getElementById("id_error").innerHTML = "date can't null";
+        document.getElementById("error_show").classList.remove("alert", "alert-secondary");
+        document.getElementById("error_show").classList.add("alert", "alert-warning");
+        document.getElementById("error_show").innerHTML = "date can't null";
     }
     else if((document.getElementById('pwd1_input').value) != (document.getElementById('pwd2_input').value)){
-        document.getElementById("id_error").classList.remove("alert", "alert-secondary");
-        document.getElementById("id_error").classList.add("alert", "alert-warning");
-        document.getElementById("id_error").innerHTML = "password error";
+        document.getElementById("error_show").classList.remove("alert", "alert-secondary");
+        document.getElementById("error_show").classList.add("alert", "alert-warning");
+        document.getElementById("error_show").innerHTML = "password error";
     }
     else {
         var xmlhttp = new XMLHttpRequest();
@@ -21,9 +21,9 @@ function showHint() {
                     history.back();
                 }
                 else{
-                    document.getElementById("id_error").classList.remove("alert", "alert-secondary");
-                    document.getElementById("id_error").classList.add("alert", "alert-warning");
-                    document.getElementById("id_error").innerHTML = this.responseText;
+                    document.getElementById("error_show").classList.remove("alert", "alert-secondary");
+                    document.getElementById("error_show").classList.add("alert", "alert-warning");
+                    document.getElementById("error_show").innerHTML = this.responseText;
                 }
             }
         }

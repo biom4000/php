@@ -9,17 +9,16 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
     include 'connect_mysql.php';
 
-    $sql = "SELECT * FROM register WHERE ID='".$_SESSION['id']."' AND Password='".$_SESSION['pwd']."'";
+    $sql = "SELECT * FROM register WHERE ID='".$id."' OR Email='".$mail."'";
     //echo $sql;
     $result = mysqli_query($con, $sql);
 
     if(mysqli_num_rows($result) > 0){
-        echo 'ok';
+        echo 'Repeat Date';
     }
     else{
-        unset($_SESSION['id']);
-        unset($_SESSION['pwd']);
-        echo '**ID or Password is not**';
+
+        echo 'ok';
     }
 
     mysqli_close($con);
