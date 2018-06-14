@@ -17,12 +17,12 @@ $mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for Gmail
 $mail->Host = "smtp.mail.yahoo.com";
 $mail->Port = 465; // or 587
 $mail->IsHTML(true);
-$mail->Username = "biom4000";
-$mail->Password = "ga9871109kppq";
-$mail->SetFrom("biom4000@yahoo.com.tw");
-$mail->Subject = "Test";
+$mail->Username = "ga9871109kppq";
+$mail->Password = "lf2net910255";
+$mail->SetFrom("ga9871109kppq@yahoo.com.tw");
+$mail->Subject = "Test1234";
 $mail->Body = "hello";
-$mail->AddAddress("biom4000@yahoo.com.tw");
+$mail->AddAddress($email);
 
 if(!$mail->Send()) {
     echo "Mailer Error: " . $mail->ErrorInfo;

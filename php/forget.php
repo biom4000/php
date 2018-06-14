@@ -8,11 +8,11 @@
 
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $id = $_POST['id'];
-    $mail = $_POST['email'];
+    $email = $_POST['email'];
 
     include 'connect_mysql.php';
 
-    $sql = "SELECT * FROM register WHERE ID='".$id."' AND Email='".$mail."'";
+    $sql = "SELECT * FROM register WHERE ID='".$id."' AND Email='".$email."'";
     //echo $sql;
     $result = mysqli_query($con, $sql);
 
