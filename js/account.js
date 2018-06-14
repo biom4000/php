@@ -8,22 +8,22 @@ function showHint() {
     var error = document.getElementById("error_show");
 
     if( (id.value.length == 0)||(pwd1.value.length == 0)||(pwd2.value.length == 0)||(mail.value.length == 0) ){
-        error.classList.remove("alert", "alert-secondary");
+        error.classList.remove("alert", "alert-secondary", "alert-warning", "alert-success");
         error.classList.add("alert", "alert-warning");
         error.innerHTML = "date can't null";
     }
     else if((id.value.length<4)||(id.value.length>15)){
-        error.classList.remove("alert", "alert-secondary");
+        error.classList.remove("alert", "alert-secondary", "alert-warning", "alert-success");
         error.classList.add("alert", "alert-warning");
         error.innerHTML = "id length error";
     }
     else if((pwd1.value) != (pwd2.value)){
-        error.classList.remove("alert", "alert-secondary");
+        error.classList.remove("alert", "alert-secondary", "alert-warning", "alert-success");
         error.classList.add("alert", "alert-warning");
         error.innerHTML = "password error";
     }
     else if((pwd1.value.length<6) || (pwd1.value.length > 20)){
-        error.classList.remove("alert", "alert-secondary");
+        error.classList.remove("alert", "alert-secondary", "alert-warning", "alert-success");
         error.classList.add("alert", "alert-warning");
         error.innerHTML = "password length error";
     }
@@ -32,10 +32,12 @@ function showHint() {
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 if(this.responseText == 'ok'){
-                    history.back();
+                    error.classList.remove("alert", "alert-secondary", "alert-warning", "alert-success");
+                    error.classList.add("alert", "alert-success");
+                    error.innerHTML = this.responseText;
                 }
                 else{
-                    error.classList.remove("alert", "alert-secondary");
+                    error.classList.remove("alert", "alert-secondary", "alert-warning", "alert-success");
                     error.classList.add("alert", "alert-warning");
                     error.innerHTML = this.responseText;
                 }

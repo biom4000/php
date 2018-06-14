@@ -1,30 +1,32 @@
 function showHint() {
-    if( (document.getElementById('id_input').value.length == 0)||
-        (document.getElementById('email_input').value.length == 0) ){
+    var id = document.getElementById('id_input');
+    var mail = document.getElementById('email_input');
+    var error = document.getElementById("error_show");
 
-        document.getElementById("id_error").classList.remove("alert", "alert-secondary");
-        document.getElementById("id_error").classList.add("alert", "alert-warning");
-        document.getElementById("id_error").innerHTML = "date can't null";
+    if( (id.value.length == 0)||(mail.value.length == 0) ){
+        error.classList.remove("alert", "alert-secondary", "alert-warning", "alert-success");
+        error.classList.add("alert", "alert-warning");
+        error.innerHTML = "date can't null";
     }
     else {
         var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 if(this.responseText == 'ok'){
-                    history.back();
+                    error.classList.remove("alert", "alert-secondary", "alert-warning", "alert-success");
+                    error.classList.add("alert", "alert-success");
+                    error.innerHTML = this.responseText;
                 }
                 else{
-                    document.getElementById("id_error").classList.remove("alert", "alert-secondary");
-                    document.getElementById("id_error").classList.add("alert", "alert-warning");
-                    document.getElementById("id_error").innerHTML = this.responseText;
+                    error.classList.remove("alert", "alert-secondary", "alert-warning", "alert-success");
+                    error.classList.add("alert", "alert-warning");
+                    error.innerHTML = this.responseText;
                 }
             }
         }
-        xmlhttp.open("POST", "../php/index.php", true);
+        xmlhttp.open("POST", "../php/forget.php", true);
         xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-        xmlhttp.send("id="+document.getElementById('id_input').value+"&pwd="+document.getElementById('pwd1_input').value
-            +"&email="+document.getElementById('email_input').value+"&gender="+document.getElementById('gender_input').value
-            +"&area="+document.getElementById('area_input').value);
+        xmlhttp.send("id="+id.value+"&mail="+mail.value);
 
     }
 
